@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+  <beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    
+    <bean id="triangle1" class="com.spy.Beanfactory.Triangle">
+    
+    <property name="pointa" ref="point1"></property>
+    <property name="pointb" ref="point2"></property>
+    <property name="pointc" ref="point3"></property>
+    
+    </bean>
+    
+    
+ 
+   <bean id="point1" class="com.spy.Beanfactory.Point">
+   <property name="x" value="0"></property>
+   <property name="y" value="0"></property>
+   </bean>    
+   
+   <bean id="point2" class="com.spy.Beanfactory.Point">  
+    <property name="x" value="-12"></property>
+   <property name="y" value="0"></property>
+   </bean>    
+   
+   <bean id="point3" class="com.spy.Beanfactory.Point">
+   <property name="x" value="12"></property>
+   <property name="y" value="0"></property>
+   </bean>    
+ 
+ 
+  <bean class="com.spy.Beanfactory.Beanfactory"/>
+ 
+  
+  </beans>   
+  
